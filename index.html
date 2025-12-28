@@ -1,22 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Car Control Bluetooth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      max-width: 380px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 1.6em;
+    }
+
+    p {
+      font-size: 0.95em;
+      line-height: 1.4em;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: block;
+      margin: 20px auto 10px;
+      padding: 14px;
+      background: #00e5ff;
+      color: #00323a;
+      font-size: 1.05em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,229,255,0.6);
+    }
+
+    .note {
+      font-size: 0.8em;
+      opacity: 0.7;
+      margin-top: 12px;
+    }
+
+    .footer {
+      margin-top: 16px;
+      font-size: 0.75em;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
 
-<h2>Car Control Bluetooth</h2>
+  <div class="card">
+    <h1>🚗 Car Control Bluetooth</h1>
 
-<p>Instala la aplicación o ábrela si ya la tienes instalada.</p>
+    <p>
+      Aplicación para controlar el vehículo por Bluetooth.
+      Si aún no la tienes instalada, descárgala desde aquí.
+    </p>
 
-<a href="https://github.com/JGprogramacion/Control-bluetooth-SN/releases/download/Controller/carControl.apk">
-⬇️ Descargar aplicación
-</a>
+    <a class="btn"
+       href="https://github.com/JGprogramacion/Control-bluetooth-SN/releases/download/Controller/carControl.apk">
+      ⬇️ Descargar aplicación
+    </a>
 
-<br><br>
+    <p class="note">
+      *Después de instalarla, busca <b>Car Control</b> en tu teléfono.
+    </p>
 
-<p>Si ya la tienes instalada, ábrela desde el teléfono.</p>
+    <div class="footer">
+      Proyecto educativo · NFC + Bluetooth
+    </div>
+  </div>
 
 </body>
 </html>
